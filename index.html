@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devonix Solutions | Premium Digital Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --devonix-red: #e63946;
+            --devonix-yellow: #ffb703;
+            --devonix-navy: #023047;
+        }
+        .bg-devonix-navy { background-color: var(--devonix-navy); }
+        .text-devonix-yellow { color: var(--devonix-yellow); }
+        .border-devonix-red { border-color: var(--devonix-red); }
+        
+        /* Floating Shapes for Creativity */
+        .shape-1 { position: absolute; top: 10%; right: -5%; width: 300px; height: 300px; background: rgba(230, 57, 70, 0.1); border-radius: 50%; filter: blur(80px); z-index: -1; }
+        .shape-2 { position: absolute; bottom: 10%; left: -5%; width: 400px; height: 400px; background: rgba(255, 183, 3, 0.1); border-radius: 50%; filter: blur(100px); z-index: -1; }
+        
+        .hero-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .btn-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
+
+    <header class="bg-white shadow-xl sticky top-0 z-50 border-b-4 border-devonix-red">
+        <nav class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-3xl font-black tracking-tighter text-devonix-navy">
+                DEVONIX<span class="text-red-600">SOLUTIONS</span>
+            </div>
+            <ul class="hidden md:flex space-x-10 font-bold text-lg">
+                <li><a href="index.html" class="text-red-600">Home</a></li>
+                <li><a href="#services" class="hover:text-red-600 transition">Services</a></li>
+                <li><a href="#reviews" class="hover:text-red-600 transition">Reviews</a></li>
+                <li><a href="#contact" class="hover:text-red-600 transition">Contact</a></li>
+            </ul>
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/923414613809" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold btn-hover flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Live Chat
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative min-h-screen flex items-center hero-gradient pt-20">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="animate__animated animate__fadeInLeft">
+                <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-widest">Premium IT Solutions</span>
+                <h1 class="text-7xl font-black text-devonix-navy mt-6 leading-none">
+                    Innovating <br>
+                    <span class="text-red-600" id="anim-text">Digital Worlds</span>
+                </h1>
+                <p class="mt-8 text-2xl text-slate-600 leading-relaxed max-w-xl">
+                    Leading the industry in MERN Development, Social Media Marketing, and High-End Branding. 
+                    <span class="font-bold text-devonix-navy">Your vision, our code.</span>
+                </p>
+                <div class="mt-10 flex flex-wrap gap-6">
+                    <a href="#contact" class="bg-devonix-navy text-white px-10 py-5 rounded-2xl font-black text-xl btn-hover shadow-2xl">REQUEST WORK ONLINE</a>
+                    <div class="bg-devonix-yellow text-devonix-navy px-10 py-5 rounded-2xl font-black text-xl shadow-lg border-2 border-white">50% OFF OPENING SALE</div>
+                </div>
+            </div>
+            <div class="relative animate__animated animate__zoomIn">
+                <div class="absolute -inset-4 bg-devonix-red rounded-3xl rotate-3 opacity-10"></div>
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070" alt="Devonix Work" class="relative rounded-3xl shadow-2xl z-10 border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 bg-devonix-navy text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-black mb-4">Our Elite Services</h2>
+            <p class="text-devonix-yellow text-xl mb-20 font-semibold tracking-widest">Professional. Fast. Reliable.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="group bg-white/5 p-10 rounded-[40px] border-t-8 border-devonix-red hover:bg-white/10 transition cursor-default">
+                    <div class="w-20 h-20 bg-devonix-red rounded-2xl flex items-center justify-center text-4xl mb-8 group-hover:rotate-12 transition">💻</div>
+                    <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">High-performance MERN Stack applications & Portfolio websites designed for authority.</p>
+                    <a href="#contact" class="text-devonix-yellow font-black border-b-2 border-devonix-yellow pb-1">REQUEST ONLINE</a>
+                </div>
+
+                <div class="group bg-white/5 p-10 rounded-[40px] border-t-8 border-devonix-yellow hover:bg-white/10 transition cursor-default">
+                    <div class="w-20 h-20 bg-devonix-yellow rounded-2xl flex items-center justify-center text-4xl mb-8 group-hover:rotate-12 transition">📈</div>
+                    <h3 class="text-2xl font-bold mb-4">Ads & Marketing</h3>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">Explosive growth via Facebook, Instagram, and YouTube Management strategies.</p>
+                    <a href="#contact" class="text-devonix-yellow font-black border-b-2 border-devonix-yellow pb-1">BOOST BRAND</a>
+                </div>
+
+                <div class="group bg-white/5 p-10 rounded-[40px] border-t-8 border-red-500 hover:bg-white/10 transition cursor-default">
+                    <div class="w-20 h-20 bg-red-500 rounded-2xl flex items-center justify-center text-4xl mb-8 group-hover:rotate-12 transition">🎨</div>
+                    <h3 class="text-2xl font-bold mb-4">Graphic Design</h3>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">Logos, Resumes, Business Cards, and Brochures that capture attention instantly.</p>
+                    <a href="#contact" class="text-devonix-yellow font-black border-b-2 border-devonix-yellow pb-1">GET DESIGN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-32 bg-white relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-16">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="p-10 bg-slate-50 rounded-3xl border-l-8 border-devonix-yellow shadow-sm">
+                    <div class="flex text-devonix-yellow mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-xl italic text-slate-700">"Devonix Solutions built my portfolio and handled my marketing. My sales increased by 40% in the first month!"</p>
+                    <p class="mt-6 font-black text-devonix-navy">— Ahmed R., E-commerce Owner</p>
+                </div>
+                <div class="p-10 bg-slate-50 rounded-3xl border-l-8 border-devonix-red shadow-sm">
+                    <div class="flex text-devonix-yellow mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-xl italic text-slate-700">"Professional communication and very high-quality graphic designs. Best IT agency in Islamabad."</p>
+                    <p class="mt-6 font-black text-devonix-navy">— S. Fatima, Digital Creator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-slate-100 relative overflow-hidden">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="bg-white rounded-[50px] shadow-2xl overflow-hidden grid md:grid-cols-2">
+                <div class="bg-devonix-navy p-16 text-white flex flex-col justify-center">
+                    <h2 class="text-4xl font-black mb-6">Let's Work Together</h2>
+                    <p class="text-slate-300 text-lg mb-10">Fill out the form and choose how you'd like to send your request. We respond within 1 hour!</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center"><i class="fas fa-phone text-devonix-yellow mr-4 text-xl"></i> +92 341 4613809</div>
+                        <div class="flex items-center"><i class="fas fa-envelope text-devonix-yellow mr-4 text-xl"></i> DevonixSol@outlook.com</div>
+                        <div class="flex items-center"><i class="fas fa-map-marker-alt text-devonix-yellow mr-4 text-xl"></i> PWD Block A, Islamabad</div>
+                    </div>
+                </div>
+                <div class="p-16">
+                    <form id="devonixForm" class="space-y-5">
+                        <input type="text" id="name" placeholder="Full Name" required class="w-full p-4 rounded-xl bg-slate-100 border-2 border-transparent focus:border-red-500 outline-none transition">
+                        <select id="service" class="w-full p-4 rounded-xl bg-slate-100 outline-none">
+                            <option value="Web Development">Web Development</option>
+                            <option value="Graphic Design">Graphic Design</option>
+                            <option value="Marketing">Ads Marketing</option>
+                             <option value="SMM">Social Media Management</option>
+                              <option value="yotube">Youtube Management & SEO</option>
+                        </select>
+                        <textarea id="message" rows="4" placeholder="Project Details" required class="w-full p-4 rounded-xl bg-slate-100 border-2 border-transparent focus:border-red-500 outline-none transition"></textarea>
+                        
+                        <div class="grid grid-cols-1 gap-4 pt-4">
+                            <button type="button" onclick="sendWhatsApp()" class="bg-green-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition flex items-center justify-center">
+                                <i class="fab fa-whatsapp mr-2"></i> Send via WhatsApp
+                            </button>
+                            <button type="button" onclick="sendEmail()" class="bg-devonix-navy text-white py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition flex items-center justify-center">
+                                <i class="fas fa-envelope mr-2"></i> Send via Email
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-devonix-navy text-white py-16 border-t-8 border-devonix-yellow">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black mb-4">DEVONIX SOLUTIONS</h2>
+            <p class="text-slate-400 max-w-lg mx-auto mb-8 text-lg">Your elite partner for digital transformation in Islamabad and beyond.</p>
+            <div class="flex justify-center space-x-6 text-2xl mb-12">
+                <a href="https://www.facebook.com/devonixsolutions" class="hover:text-devonix-yellow transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-devonix-yellow transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-devonix-yellow transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-slate-500 font-bold border-t border-slate-800 pt-8">&copy; 2026 Devonix Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header Text Animation Logic
+        const animText = document.getElementById('anim-text');
+        const phrases = ['Web Solutions', 'Graphic Design', 'Ad Marketing', 'Digital Growth'];
+        let count = 0;
+        setInterval(() => {
+            animText.classList.add('animate__animated', 'animate__fadeOut');
+            setTimeout(() => {
+                animText.innerText = phrases[count];
+                animText.classList.remove('animate__fadeOut');
+                animText.classList.add('animate__fadeIn');
+                count = (count + 1) % phrases.length;
+            }, 500);
+        }, 3500);
+
+        // FORM LOGIC
+        function getFormData() {
+            return {
+                name: document.getElementById('name').value,
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value
+            };
+        }
+
+        function sendWhatsApp() {
+            const data = getFormData();
+            if(!data.name || !data.message) return alert("Please fill the form first!");
+            
+            const text = `*New Service Request - Devonix Solutions*%0A%0A*Name:* ${data.name}%0A*Service:* ${data.service}%0A*Details:* ${data.message}`;
+            window.open(`https://wa.me/923414613809?text=${text}`, '_blank');
+        }
+
+        function sendEmail() {
+            const data = getFormData();
+            if(!data.name || !data.message) return alert("Please fill the form first!");
+            
+            const subject = `Service Request from ${data.name}`;
+            const body = `Client Name: ${data.name}%0D%0AService Requested: ${data.service}%0D%0A%0D%0ADetails:%0D%0A${data.message}`;
+            window.location.href = `mailto:DevonixSol@outlook.com?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>
